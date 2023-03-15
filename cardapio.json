@@ -1,12 +1,4 @@
-import { Section } from "./components/section";
-import { Main, Logo, Cardapio } from "./style";
-
-import cardapio from './assets/cardapio.png'
-import logo from './assets/logo.png'
-
-
-const App = () => {
-  const sections = [
+[
     {
         "section_name": "Petiscos",
         "products": [
@@ -185,13 +177,3 @@ const App = () => {
         ]
     }
 ]
-  return (
-    <Main>
-      <Logo src={logo} />
-      <Cardapio src={cardapio} />
-      {sections.map((s) => <Section section={s} />)}
-    </Main>
-  );
-}
-
-export default App;
